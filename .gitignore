@@ -1,44 +1,55 @@
 
+# Python cache and compiled files
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
 *.so
 
+# Virtual environments
 .venv/
 venv/
 env/
 ENV/
 
+# Environment variables and secrets
 .env
 .env.*
 !.env.example
 .streamlit/secrets.toml
 
+# IDE settings
 .vscode/
 .idea/
 *.swp
 *.swo
 
+# Jupyter
 .ipynb_checkpoints/
 
+# Testing, linting and coverage
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 .coverage
 htmlcov/
 
+# Operating system files
 .DS_Store
 Thumbs.db
 desktop.ini
 
+# Logs
 *.log
 
+# Private Yelp datasets
 data/real_yelp_reviews.csv
 data/*yelp*.csv
 
+# Model backups
 models/*backup*
 models/*before*
 
+# Temporary files
 *.tmp
 *.temp
