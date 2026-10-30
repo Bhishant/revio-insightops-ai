@@ -1,0 +1,68 @@
+{
+  "model": "TF-IDF + Logistic Regression",
+  "dataset": "Yelp restaurant reviews (rating_review labels)",
+  "split": {
+    "train_rows": 11480,
+    "test_rows": 2870,
+    "test_size": 0.2,
+    "random_state": 42
+  },
+  "accuracy": 0.8185,
+  "macro_f1": 0.6951,
+  "class_order": [
+    "positive",
+    "neutral",
+    "negative"
+  ],
+  "classification_report": {
+    "positive": {
+      "precision": 0.9134020618556701,
+      "recall": 0.8990360223236935,
+      "f1-score": 0.9061621068780363,
+      "support": 1971.0
+    },
+    "neutral": {
+      "precision": 0.39226519337016574,
+      "recall": 0.3955431754874652,
+      "f1-score": 0.39389736477115117,
+      "support": 359.0
+    },
+    "negative": {
+      "precision": 0.7658450704225352,
+      "recall": 0.8055555555555556,
+      "f1-score": 0.7851985559566786,
+      "support": 540.0
+    },
+    "accuracy": 0.8184668989547038,
+    "macro avg": {
+      "precision": 0.6905041085494569,
+      "recall": 0.7000449177889049,
+      "f1-score": 0.6950860092019554,
+      "support": 2870.0
+    },
+    "weighted avg": {
+      "precision": 0.8204512217301687,
+      "recall": 0.8184668989547038,
+      "f1-score": 0.8193246992425295,
+      "support": 2870.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1772,
+      150,
+      49
+    ],
+    [
+      133,
+      142,
+      84
+    ],
+    [
+      35,
+      70,
+      435
+    ]
+  ],
+  "note": "Held-out split from Yelp restaurant review dataset; results may not generalize to other industries."
+}
